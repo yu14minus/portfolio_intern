@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <!-- スライダー用 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- 全般 -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./skills.css">
+    <link rel="stylesheet" href="./works.css">
+    <link rel="stylesheet" href="./profile.css">
+    <title>yu14minusのポートフォリオ</title>
+</head>
+
+<body>
+    <header>
+        <p class="header-title">Portfolio</p>
+        <nav class="header-menu">
+            <ul>
+                <li class="header-item"><a href="#skills">Skills</a></li>
+                <li class="header-item"><a href="#works">Works</a></li>
+                <li class="header-item"><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 初期画面 -->
+    <div id="page-top" class="start">
+        <!-- 灰色 -->
+        <div class="gray">
+            <div class="squ01">
+                <p class="start-title scroll-up-first">yu14minus
+                    <br>Portfolio
+                </p>
+                <p class="start-intro">ご覧いただきありがとうございます。
+                    <br>こちらは【&nbsp;yu14minus&nbsp;(ゆう)&nbsp;】の&ensp;
+                    <br>ポートフォリオサイトでございます。
+                </p>
+            </div>
+            <div class="tri02"></div>
+        </div>
+        <!-- 水色 -->
+        <div class="tri01"></div>
+        <div class="trape01 scroll-right"></div>
+        <img class="arrow01 scroll-top" src="./images/arrow01.svg" alt="">
+        <p class="scroll">↓&thinsp;SCROLL&nbsp;↓</p>
+    </div>
+    <!-- 下部メニュー(モバイル用) -->
+    <div class="bottommenu-container">
+        <a class="bottommenu-item" href="#skills">
+            <img src="./images/bottom-skills.svg" alt="Skills">
+            <p>Skills</p>
+        </a>
+        <div class="bottommenu-line"></div>
+        <a class="bottommenu-item" href="#works">
+            <img src="./images/bottom-works.svg" alt="Works">
+            <p>Works</p>
+        </a>
+        <div class="bottommenu-line"></div>
+        <a class="bottommenu-item" href="#profile">
+            <img src="./images/bottom-profile.svg" alt="Profile">
+            <p>Profile</p>
+        </a>
+        <div class="bottommenu-line"></div>
+        <a class="bottommenu-item2" href="#page-top">
+            <img src="./images/bottom-top.svg" alt="Top">
+            <p>Top</p>
+        </a>
+    </div>
+
+    <!-- できること -->
+    <div class="content" id="skills">
+        <p class="content-title  scroll-up">Skills<span class="content-subtitle">可能なこと</span></p>
+
+        <!-- 全て -->
+        <div class="skill-all">
+            <!-- コーディング -->
+            <div>
+                <p class="skill-title">Coding<span class="skill-subtitle">&ndash;&nbsp;コーディング&nbsp;&ndash;</span></p>
+                <p class="skill-intro">HTML、CSSを用い、Webページをコーディングすることが
+                    可能です。JavaScriptも問題なく扱うことができます。
+                    <br>また、フォーム等におけるPHPの使用も可能です。
+                </p>
+                <div class="skill-container">
+                    <div class="skill-item">
+                        <p>HTML</p>
+                        <svg class="skill-smallicon" viewBox="0 0 128 128">
+                            <path
+                                d="M19.569 27l8.087 89.919 36.289 9.682 36.39-9.499L108.431 27H19.569zM91.61 47.471l-.507 5.834L90.88 56H48.311l1.017 12h40.54l-.271 2.231-2.615 28.909-.192 1.69L64 106.964v-.005l-.027.012-22.777-5.916L39.65 84h11.168l.791 8.46 12.385 3.139.006-.234v.012l12.412-2.649L77.708 79H39.153l-2.734-30.836L36.152 45h55.724l-.266 2.471zM27.956 1.627h5.622v5.556h5.144V1.627h5.623v16.822h-5.623v-5.633h-5.143v5.633h-5.623V1.627zm23.782 5.579h-4.95V1.627h15.525v5.579h-4.952v11.243h-5.623V7.206zm13.039-5.579h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502V1.627zm21.736 0h5.624v11.262h7.907v5.561H86.513V1.627z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="skill-item">
+                        <p>CSS</p>
+                        <svg class="skill-smallicon" viewBox="0 0 128 128">
+                            <path
+                                d="M19.67 26l8.069 90.493 36.206 10.05 36.307-10.063L108.33 26H19.67zm69.21 50.488L86.53 98.38l.009 1.875L64 106.55v.001l-.018.015-22.719-6.225L39.726 83h11.141l.79 8.766 12.347 3.295-.004.015v-.032l12.394-3.495L77.702 77H51.795l-.222-2.355-.506-5.647L50.802 66h27.886l1.014-11H37.229l-.223-2.589-.506-6.03L36.235 43h55.597l-.267 3.334-2.685 30.154M89 14.374L81.851 6H89V1H73v4.363L81.39 13H73v5h16zm-19 0L63.193 6H70V1H55v4.363L62.733 13H55v5h15zM52 13h-8V6h8V1H38v17h14z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-item">
+                        <p>JavaScript</p>
+                        <svg class="skill-middleicon" viewBox="0 0 128 128">
+                            <path
+                                d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="skill-item">
+                        <p>PHP</p>
+                        <svg class="skill-smallicon" viewBox="0 0 128 128">
+                            <path
+                                d="M64 30.332C28.654 30.332 0 45.407 0 64s28.654 33.668 64 33.668c35.345 0 64-15.075 64-33.668S99.346 30.332 64 30.332zm-5.982 9.81h7.293v.003l-1.745 8.968h6.496c4.087 0 6.908.714 8.458 2.139 1.553 1.427 2.017 3.737 1.398 6.93l-3.053 15.7h-7.408l2.902-14.929c.33-1.698.208-2.855-.365-3.473-.573-.617-1.793-.925-3.658-.925h-5.828L58.752 73.88h-7.291l6.557-33.738zM26.73 49.114h14.133c4.252 0 7.355 1.116 9.305 3.348 1.95 2.232 2.536 5.346 1.758 9.346-.32 1.649-.863 3.154-1.625 4.52-.763 1.364-1.76 2.613-2.99 3.745-1.468 1.373-3.098 2.353-4.891 2.936-1.794.585-4.08.875-6.858.875h-6.294l-1.745 8.97h-7.35l6.557-33.74zm57.366 0h14.13c4.252 0 7.353 1.116 9.303 3.348h.002c1.95 2.232 2.538 5.346 1.76 9.346-.32 1.649-.861 3.154-1.623 4.52-.763 1.364-1.76 2.613-2.992 3.745-1.467 1.373-3.098 2.353-4.893 2.936-1.794.585-4.077.875-6.855.875h-6.295l-1.744 8.97h-7.35l6.557-33.74zm-51.051 5.325-2.742 14.12h4.468c2.963 0 5.172-.556 6.622-1.673 1.45-1.116 2.428-2.981 2.937-5.592.485-2.507.264-4.279-.666-5.309-.93-1.032-2.79-1.547-5.584-1.547h-5.035zm57.363 0-2.744 14.12h4.47c2.965 0 5.17-.556 6.622-1.673 1.449-1.116 2.427-2.981 2.935-5.592.487-2.507.266-4.279-.664-5.309-.93-1.032-2.792-1.547-5.584-1.547h-5.035z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 区切り線 -->
+            <div class="line01"></div>
+
+            <!-- 動画編集 -->
+            <div>
+                <p class="skill-title2">Video<span class="skill-subtitle">&ndash;&nbsp;動画編集&nbsp;&ndash;</span></p>
+                <p class="skill-intro2">Adobeの&nbsp;AfterEffects&nbsp;やPremierePro&nbsp;を用い、動画を編集をすることもできます。</p>
+                <div class="skill-container2">
+                    <div class="skill-item">
+                        <p>AfterEffects</p>
+                        <svg class="skill-largeicon" viewBox="0 0 128 128">
+                            <path d="M87 52.4c-7.5.9-7.5 9.2-7.5 9.2h14.9c.1 0 .8-9.2-7.4-9.2zM38.2 63.1H51l-6.4-24.4z">
+                            </path>
+                            <path
+                                d="M0 0v128h128V0H0zm57.5 88.6L53 72.5H36.2l-4.4 16.1h-9.4l16-54.9v-3.8h12.2l17.3 58.7H57.5zm46-19.6h-24c1.9 19.2 21.2 10 21.2 10v8s-1.3 2.6-14.8 2.6-16.3-18.3-16.3-18.3v-4.7s1.3-22 17.3-22 16.5 14.6 16.5 14.6V69z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="skill-item">
+                        <p>PremierePro</p>
+                        <svg class="skill-largeicon" viewBox="0 0 128 128">
+                            <path d="M50.3 38.5h-7.4v20.7h7.4c5 0 9.1-4.1 9.1-9.1v-2.4c0-5.1-4.1-9.2-9.1-9.2z"></path>
+                            <path
+                                d="M0 0v128h128V0H0zm51.2 67.5h-8.3v21.3h-9.6V30.3h18.5c9.4-.1 17.1 7.4 17.2 16.8v2.3c0 9.9-8 18-17.8 18.1zm46.1-14.2s-7 0-10.1 1.3v34.2H77.1V48.9s10.2-5.1 20.2-3.8v8.2z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 実績 -->
+    <div class="content" id="works">
+        <!-- 装飾(右上) -->
+        <div class="tri11"></div>
+        <div class="tri12"></div>
+        <div class="tri13"></div>
+        <div class="tri14"></div>
+        <!-- 中身 -->
+        <p class="content-title scroll-up">Works<span class="content-subtitle">制作したもの</span></p>
+        <p class="content-intro">以下はこれまでに私が制作したサイトや動画です。</p>
+        <!-- スライド -->
+        <div class="work-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- 制作物スライド テンプレ -->
+                    <!-- work-item(一番上)に web, mov, oth を追加 -->
+                    <!--
+                    <div class="work-item oth swiper-slide">
+                        <div class="work-tagall">
+                            <div class="work-iconcontainer">
+                                <img class="work-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                                <img class="work-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                                <img class="work-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                            </div>
+                            <div class="work-tagcontainer">
+                                <p class="work-tag web">Web</p>
+                                <p class="work-tag mov">Movie</p>
+                                <p class="work-tag oth">Others</p>
+                            </div>
+                        </div>
+                        <div class="work-imgcontainer">
+                            <a class="work-img" href="">
+                                <img src="" alt="">
+                            </a>
+                            <video class="work-img" src="" muted playsinline></video>
+                            <div class="play-btn">
+                                <img src="./images/play-btn.svg" class="play-btn" alt="プレイ">
+                            </div>
+                            <iframe class="work-img" src=""></iframe>
+                        </div>
+                        <p class="work-itemtitle">ページや動画のタイトル</p>
+                        <p class="work-iteminfo" data-target="#popup-00">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
+                    </div>
+                    -->
+
+                    <!-- 新入生企画(図書館ラーコモ) -->
+                    <div class="work-item web swiper-slide">
+                        <div class="work-tagall">
+                            <div class="work-iconcontainer">
+                                <img class="work-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                                <img class="work-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                                <img class="work-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                            </div>
+                            <div class="work-tagcontainer">
+                                <p class="work-tag web">Web</p>
+                                <p class="work-tag mov">Movie</p>
+                                <p class="work-tag oth">Others</p>
+                            </div>
+                        </div>
+                        <div class="work-imgcontainer">
+                            <a class="work-img" href="https://weebee1212.com/fresh2024/studyspace/">
+                                <img src="./images/works/library.png" alt="勉強スペース紹介">
+                            </a>
+                        </div>
+                        <p class="work-itemtitle">勉強スペース紹介</p>
+                        <p class="work-iteminfo" data-target="#popup-lib">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
+                    </div>
+
+                    <!-- MooVee 夏制作2024 -->
+                    <div class="work-item mov swiper-slide">
+                        <div class="work-tagall">
+                            <div class="work-iconcontainer">
+                                <img class="work-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                                <img class="work-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                                <img class="work-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                            </div>
+                            <div class="work-tagcontainer">
+                                <p class="work-tag web">Web</p>
+                                <p class="work-tag mov">Movie</p>
+                                <p class="work-tag oth">Others</p>
+                            </div>
+                        </div>
+                        <div class="work-imgcontainer">
+                            <video class="work-img" src="./images/works/2023summer.mp4" muted playsinline></video>
+                            <div class="play-btn">
+                                <img src="./images/play-btn.svg" class="play-btn" alt="プレイ">
+                            </div>
+                        </div>
+                        <p class="work-itemtitle">TwitterがXになる
+                            <br>動画
+                        </p>
+                        <p class="work-iteminfo" data-target="#popup-twi">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
+                    </div>
+
+                    <!-- 団体図鑑 使い方動画 -->
+                    <div class="work-item mov swiper-slide">
+                        <div class="work-tagall">
+                            <div class="work-iconcontainer">
+                                <img class="work-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                                <img class="work-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                                <img class="work-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                            </div>
+                            <div class="work-tagcontainer">
+                                <p class="work-tag web">Web</p>
+                                <p class="work-tag mov">Movie</p>
+                                <p class="work-tag oth">Others</p>
+                            </div>
+                        </div>
+                        <div class="work-imgcontainer">
+                            <iframe class="work-img" width="560" height="315"
+                                src="https://www.youtube.com/embed/zUSQRBWL0ro?si=jajnpO3xsDZ3lXUv&amp;controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="work-itemtitle">団体図鑑のつかい方</p>
+                        <p class="work-iteminfo" data-target="#popup-dan">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
+                    </div>
+
+                    <!-- 早押しクイズ -->
+                    <div class="work-item web swiper-slide">
+                        <div class="work-tagall">
+                            <div class="work-iconcontainer">
+                                <img class="work-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                                <img class="work-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                                <img class="work-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                            </div>
+                            <div class="work-tagcontainer">
+                                <p class="work-tag web">Web</p>
+                                <p class="work-tag mov">Movie</p>
+                                <p class="work-tag oth">Others</p>
+                            </div>
+                        </div>
+                        <div class="work-imgcontainer">
+                            <a class="work-img" href="./quiz/index.html">
+                                <img src="./images/works/two_choice_quiz.png" alt="2択早押しクイズ">
+                            </a>
+                        </div>
+                        <p class="work-itemtitle">2択早押しクイズ</p>
+                        <p class="work-iteminfo" data-target="#popup-qui">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ナビボタン -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
+
+        <!-- ポップアップ -->
+        <!-- テンプレ -->
+        <!-- popup-content に web, mov, oth を追加 -->
+        <!--
+        <div id="popup-00" class="popup-wrapper">
+            <div class="popup-content oth">
+                <div class="popup-close">✕</div>
+                <div class="popup-tagall">
+                    <div class="popup-iconcontainer">
+                        <img class="popup-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                        <img class="popup-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                        <img class="popup-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                    </div>
+                    <div class="popup-tagcontainer">
+                        <p class="popup-tag web">Web</p>
+                        <p class="popup-tag mov">Movie</p>
+                        <p class="popup-tag oth">Others</p>
+                    </div>
+                </div>
+                <div class="popup-imgcontainer">
+                    <a class="popup-img" href="">
+                        <img src="" alt="">
+                    </a>
+                    <video class="popup-img" src="" muted playsinline controls></video>
+                    <div class="play-btn">
+                        <img src="./images/play-btn.svg" class="play-btn" alt="プレイ">
+                    </div>
+                    <iframe class="popup-img" src=""></iframe>
+                </div>
+                <p class="popup-title">ページや動画のタイトル</p>
+                <p class="popup-info">＜説明＞
+                    <br>説明</p>
+                <p class="popup-info">＜リンク＞
+                    <br><a href="" class="underline">リンク</a>
+                </p>
+                <p class="popup-info">＜制作(最終更新)＞
+                    <br>0000年0月</p>
+            </div>
+        </div>
+        -->
+
+        <!-- 新入生企画(図書館ラーコモ) -->
+        <div id="popup-lib" class="popup-wrapper">
+            <div class="popup-content web">
+                <div class="popup-close">✕</div>
+                <div class="popup-tagall">
+                    <div class="popup-iconcontainer">
+                        <img class="popup-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                        <img class="popup-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                        <img class="popup-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                    </div>
+                    <div class="popup-tagcontainer">
+                        <p class="popup-tag web">Web</p>
+                        <p class="popup-tag mov">Movie</p>
+                        <p class="popup-tag oth">Others</p>
+                    </div>
+                </div>
+                <div class="popup-imgcontainer">
+                    <a class="popup-img" href="https://weebee1212.com/fresh2024/studyspace/">
+                        <img src="./images/works/library.png" alt="勉強スペース紹介">
+                    </a>
+                </div>
+                <p class="popup-title">勉強スペース紹介</p>
+                <p class="popup-info">＜説明＞
+                    <br>大学の勉強スペースについてまとめたページです。複数人のグループで作成し、私は主にコーディングを担当しました。
+                </p>
+                <p class="popup-info">＜リンク＞
+                    <br><a href="https://weebee1212.com/fresh2024/studyspace/"
+                        class="underline">https://weebee1212.com/fresh2024/studyspace/</a>
+                </p>
+                <p class="popup-info">＜制作&nbsp;(最終更新)＞
+                    <br>2024年7月
+                </p>
+            </div>
+        </div>
+
+        <!-- MooVee 夏制作2024 -->
+        <div id="popup-twi" class="popup-wrapper">
+            <div class="popup-content mov">
+                <div class="popup-close">✕</div>
+                <div class="popup-tagall">
+                    <div class="popup-iconcontainer">
+                        <img class="popup-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                        <img class="popup-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                        <img class="popup-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                    </div>
+                    <div class="popup-tagcontainer">
+                        <p class="popup-tag web">Web</p>
+                        <p class="popup-tag mov">Movie</p>
+                        <p class="popup-tag oth">Others</p>
+                    </div>
+                </div>
+                <div class="popup-imgcontainer">
+                    <video class="popup-img" src="./images/works/2023summer.mp4" muted playsinline controls></video>
+                    <div class="popup-play-btn">
+                        <img src="./images/play-btn.svg" class="play-btn" alt="プレイ">
+                    </div>
+                </div>
+                <p class="popup-title">TwitterがXになる動画</p>
+                <p class="popup-info">＜説明＞
+                    <br>旧Twitterの鳥が飛び立ちXのロゴが現れる動画です。Aeを用いて制作しました。
+                </p>
+                <p class="popup-info">＜制作(最終更新)＞
+                    <br>2023年9月
+                </p>
+            </div>
+        </div>
+
+        <!-- 団体図鑑 使い方動画 -->
+        <div id="popup-dan" class="popup-wrapper">
+            <div class="popup-content mov">
+                <div class="popup-close">✕</div>
+                <div class="popup-tagall">
+                    <div class="popup-iconcontainer">
+                        <img class="popup-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                        <img class="popup-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                        <img class="popup-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                    </div>
+                    <div class="popup-tagcontainer">
+                        <p class="popup-tag web">Web</p>
+                        <p class="popup-tag mov">Movie</p>
+                        <p class="popup-tag oth">Others</p>
+                    </div>
+                </div>
+                <div class="popup-imgcontainer">
+                    <iframe class="popup-img" width="560" height="315"
+                        src="https://www.youtube.com/embed/zUSQRBWL0ro?si=jajnpO3xsDZ3lXUv" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="popup-title">団体図鑑のつかい方</p>
+                <p class="popup-info">＜説明＞
+                    <br>所属サークルで運営しているサイト内のコンテンツの使い方を紹介している動画です。Ae、Prを用いて制作しました。
+                </p>
+                <p class="popup-info">＜リンク＞
+                    <br><a href="https://youtu.be/zUSQRBWL0ro?si=wNbuesCvB_afuIBG"
+                        class="underline">https://youtu.be/zUSQRBWL0ro?si=wNbuesCvB_afuIBG</a>
+                </p>
+                <p class="popup-info">＜制作(最終更新)＞
+                    <br>2024年3月
+                </p>
+            </div>
+        </div>
+
+        <!-- 早押しクイズ -->
+        <div id="popup-qui" class="popup-wrapper">
+            <div class="popup-content web">
+                <div class="popup-close">✕</div>
+                <div class="popup-tagall">
+                    <div class="popup-iconcontainer">
+                        <img class="popup-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                        <img class="popup-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                        <img class="popup-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                    </div>
+                    <div class="popup-tagcontainer">
+                        <p class="popup-tag web">Web</p>
+                        <p class="popup-tag mov">Movie</p>
+                        <p class="popup-tag oth">Others</p>
+                    </div>
+                </div>
+                <div class="popup-imgcontainer">
+                    <a class="popup-img" href="./quiz/index.html">
+                        <img src="./images/works/two_choice_quiz.png" alt="2択早押しクイズ">
+                    </a>
+                </div>
+                <p class="popup-title">2択早押しクイズ</p>
+                <p class="popup-info">＜説明＞
+                    <br>表示された画像がAかBかを答える早押しクイズです。スコア表示やLINE共有機能もつけています。
+                </p>
+                <p class="popup-info">＜リンク＞
+                    <br><a href="./quiz/index.html" class="underline">./quiz/index.html</a>
+                </p>
+                <p class="popup-info">＜制作(最終更新)＞
+                    <br>2025年10月
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- プロフィール -->
+    <div class="content" id="profile">
+        <p class="content-title scroll-up">Profile<span class="content-subtitle">自己紹介</span></p>
+        <p class="content-intro">以下は簡単な自己紹介です。</p>
+        <div class="profile-container">
+            <p class="profile-info">当サイトをご覧いただきありがとうございます。
+                <br>私はこれまで大学で学びつつ、<span class="underline">サークル活動で3年間、
+                    Webサイト(<a href="https://weebee1212.com" class="underline">https://weebee1212.com</a>)の運営やコーディングに携わって</span>きました。
+                <br>そこで得たコーディングの経験を土台として実務に携わることで、<span class="underline">現場で求められる高い基準を満たせる確かな技術力を養い、将来に向けてさらに成長したい</span>と考えています。
+                <br>補足として、サークルでは<span class="underline">Adobe After EffectsやPremiere Proを用いた動画制作にも2年ほど取り組んできました</span>ので、そちらでの制作物についても併せて上部の「Works」に掲載しております。
+                <br>
+                <br>これまでの制作物をご覧いただき、選考のご検討をいただけますと幸いです。よろしくお願いいたします。
+            </p>
+            <img class="profile-icon" src="images/profile-icon.svg" alt="PCのアイコン">
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="content" id="footer">
+        <div class="footer-flex">
+            <div class="footer-left">
+                <p class="mail">お問い合わせ
+                    <br><a href="mailto:yu14.minus.work@gmail.com" class="underline">yu14.minus.work@gmail.com</a>
+                </p>
+            </div>
+            <nav class="footer-menu">
+                <ul>
+                    <li class="footer-item"><a href="#skills">Skills</a></li>
+                    <li class="footer-item"><a href="#works">Works</a></li>
+                    <li class="footer-item"><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer-info">※このサイトのデザインは「Gemini」が生成したデータを参考に作成しています
+            <br>※このサイトは「株式会社サイトウ化成」様のHP&nbsp;(<a href="https://www.saito-kasei.com/"
+                class="underline">https://www.saito-kasei.com/</a>)&nbsp;を参考に作成しています
+            <br>※最終更新：2026.07.21
+        </p>
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- スクロールによる文字表示 -->
+    <script src="./scrollup.js"></script>
+    <!-- スライダー用 -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./works.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+# とりあえずあらかじめ記述
+.DS_Store
+Thumbs.db
+.vscode/
+.env
+node_modules/
+
+# 今回除外したいもの
+reference/

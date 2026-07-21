@@ -1,0 +1,499 @@
+/* とりあえずPC仕様 */
+html{
+    scroll-behavior: smooth;
+}
+p{
+    font-size: 1.5vw;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-weight: 600;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.underline{
+    text-decoration: underline;
+}
+.strikethrough{
+    text-decoration: line-through;
+}
+
+/* アニメーション関係 */
+.scroll-up, .scroll-up-first {
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+.scroll-up.is-show, .scroll-up-first.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.scroll-top {
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(-300px);
+    transition: all 1s;
+}
+.scroll-top.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.scroll-right {
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateX(200px);
+    transition: all 1s;
+}
+.scroll-right.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+/* ヘッダー関連 */
+header{
+    display: flex;
+    position: fixed;
+    height: 12vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    line-height: 12vh; /* 縦中央揃え */
+    padding: 0 5vw 0 3vw;
+    z-index: 100;
+}
+.header-title{
+    font-size: 3vw;
+    font-weight: bold;
+}
+.header-menu{
+    margin: 0 0 0 auto;
+}
+.header-menu ul{
+    display: flex;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+.header-item{
+    margin: 0 3vw 0 0;
+}
+
+/* 初期画面 */
+.start{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.start div{
+    position: absolute;
+}
+.gray{
+    display: flex;
+}
+.squ01{
+    width: 45vw;
+    height: 100vh;
+    background-color: #DBDCDB;
+    z-index: 3;
+    color: black;
+    padding: 54vh 5vw 0 0;
+    text-align: right;
+}
+.start-title{
+    margin: 0;
+    font-size: 4vw;
+    font-weight: bold;
+}
+.start-intro{
+    margin: 1.5vw -1vw 0 0;
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+}
+.tri02{
+    margin: 0 0 0 44vw;
+    width: 0;
+    border-bottom: 50vh solid #DBDCDB;
+    border-right: 31vw solid transparent;
+    z-index: 2;
+}
+.tri01{
+    width: 0;
+    border-top: 60vh solid #34B9FF;
+    border-right: 55vw solid transparent;
+    z-index: 5;
+}
+.trape01{
+    margin: 49vh 0 0 55vw;
+    width: 15vw;
+    border-top: 10.5vh solid #169DEC;
+    border-left: 8vw solid transparent;
+    z-index: 1;
+}
+.arrow01{
+    position: absolute;
+    margin: 28vh 0 0 70vw;
+    height: 50vh;
+    z-index: 5;
+}
+.scroll{
+    display: block;
+    position: absolute;
+    margin: 94vh 0 0 66.5vw;
+    color: black;
+    font-size: 1.7vw;
+}/* 下部メニュー */
+.bottommenu-container{
+    display: none;
+}
+
+/* コンテンツ共通 */
+.content{
+    padding: 5vw 5vw 6vw;
+}
+.content-title{
+    padding: 0 0 2.5vw;
+    font-size: 5vw;
+    font-weight: bold;
+}
+.content-subtitle{
+    margin: 0 0 0 1.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.content-intro{
+    margin: 0 0 0 2vw;
+}
+
+/* フッター関連 */
+#footer{
+    background-color: black;
+    color: white;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 8vw;
+}
+.footer-left{
+    display: block;
+    position: relative;
+    width: 30vw;
+}
+.mail{
+    font-size: 2vw;
+    line-height: 3vw;
+    margin: 0;
+}
+.footer-menu{
+    display: block;
+    margin: 0 0 0 auto;
+    line-height: 5vw;
+}
+.footer-menu ul{
+    display: flex;
+    font-size: 2.5vw;
+    text-decoration: underline;
+}
+.footer-item{
+    margin: 0 3vw 0 0;
+}
+.footer-info{
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+    line-height: 2.2vw;
+}
+
+/* スマホ */
+@media screen and (max-width: 768px) and (orientation: portrait){
+    p{
+        font-size: 3vw;
+    }
+    /* ヘッダー関連 */
+    header{
+        height: 15vw;
+        width: 100vw;
+        line-height: 15vw; /* 縦中央揃え */
+        padding: 0 4vw 0 6vw;
+        z-index: 100;
+    }
+    .header-title{
+        font-size: 4.5vw;
+    }
+    .header-menu ul{
+        font-size: 3vw;
+    }
+    .header-item{
+        margin: 0 4vw 0 0;
+    }
+
+    /* 初期画面 */
+    .squ01{
+        width: 45vw;
+        height: 45vh;
+        padding: 45vh 5vw 0 0;
+        text-align: left;
+    }
+    .start-title{
+        margin: 25vw 0 3vw 14vw;
+        font-size: 8vw;
+    }
+    .start-intro{
+        margin: 0 0 0 14vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
+        width: 60vw;
+    }
+    .gray{
+        height: 45vh;
+    }
+    .tri02{
+        bottom: 0;
+        width: 0;
+        border-bottom: 20vh solid #DBDCDB;
+        border-right: 31vw solid transparent;
+        z-index: 2;
+    }
+    .tri01{
+        border-top: 60vh solid #34B9FF;
+        border-right: 45vw solid transparent;
+    }
+    .trape01{
+        margin: 45vh 0 0 35vw;
+        width: 35vw;
+        border-top: 5.5vh solid #169DEC;
+        border-left: 18vw solid transparent;
+        z-index: 1;
+    }
+    .arrow01{
+        position: absolute;
+        margin: 30.5vh 0 0 68vw;
+        height: 30vh;
+        z-index: 5;
+    }
+    .scroll{
+        display: none;
+    }
+    /* 下部メニュー */
+    .bottommenu-container{
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 20vw;
+        bottom: 0;
+        background-color: white;
+        border-top: 3px solid #4b4b4b;
+        z-index: 999;
+    }
+    .bottommenu-item, .bottommenu-item2{
+        display: block;
+        width: 24.5vw;
+        text-align: center;
+        color: #4b4b4b;
+    }
+    .bottommenu-item2{
+        background-color: #34B9FF;
+        color: white;
+    }
+    .bottommenu-line{
+        background-color: #4b4b4b;
+        width: 0.5vw;
+        height: 20vw;
+        margin: 0vw auto 0;
+    }
+    .bottommenu-item img, .bottommenu-item2 img{
+        display: block;
+        height: 10vw;
+        margin: 2.5vw auto 1vw;
+    }
+    .bottommenu-item p, .bottommenu-item2 p{
+        display: block;
+    }
+    
+
+    /* コンテンツ共通 */
+    .content{
+        padding: 15vw 5vw 35vw;
+    }
+    .content-title{
+        padding: 0 0 2.5vw;
+        font-size: 8vw;
+    }
+    .content-subtitle{
+        margin: 0 0 0 1.5vw;
+        font-size: 3vw;
+    }
+    .content-intro{
+        margin: 0 0 15vw 2vw;
+    }
+
+    /* フッター関連 */
+    .footer-left{
+        display: block;
+        position: relative;
+        width: auto;
+    }
+    .mail{
+        font-size: 4vw;
+        line-height: 5vw;
+        margin: 0 0 0 3vw;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .footer-info{
+        display: block;
+        width: 80vw;
+        margin: 15vw auto 0;
+        line-height: 3.5vw;
+    }
+}
+
+/* タブレット */
+@media screen and (min-width: 768px) and (max-width: 960px) and (orientation: portrait){
+    p{
+        font-size: 2.5vw;
+    }
+    /* ヘッダー関連 */
+    header{
+        height: 15vw;
+        width: 100vw;
+        line-height: 15vw; /* 縦中央揃え */
+        padding: 0 4vw 0 6vw;
+        z-index: 100;
+    }
+    .header-title{
+        font-size: 4.5vw;
+    }
+    .header-menu ul{
+        font-size: 3vw;
+    }
+    .header-item{
+        margin: 0 4vw 0 0;
+    }
+
+    /* 初期画面 */
+    .squ01{
+        width: 45vw;
+        height: 45vh;
+        padding: 45vh 5vw 0 0;
+        text-align: left;
+    }
+    .start-title{
+        margin: 10vw 0 3vw 14vw;
+        font-size: 6vw;
+    }
+    .start-intro{
+        margin: 0 0 0 14vw;
+        font-size: 3vw;
+        line-height: 4vw;
+        width: 60vw;
+    }
+    .gray{
+        height: 45vh;
+    }
+    .tri02{
+        bottom: 0;
+        width: 0;
+        border-bottom: 20vh solid #DBDCDB;
+        border-right: 31vw solid transparent;
+        z-index: 2;
+    }
+    .tri01{
+        border-top: 60vh solid #34B9FF;
+        border-right: 45vw solid transparent;
+    }
+    .trape01{
+        margin: 45vh 0 0 35vw;
+        width: 35vw;
+        border-top: 5.5vh solid #169DEC;
+        border-left: 18vw solid transparent;
+        z-index: 1;
+    }
+    .arrow01{
+        position: absolute;
+        margin: 30.5vh 0 0 68vw;
+        height: 30vh;
+        z-index: 5;
+    }
+    .scroll{
+        display: none;
+    }
+    /* 下部メニュー */
+    .bottommenu-container{
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 20vw;
+        bottom: 0;
+        background-color: white;
+        border-top: 3px solid #4b4b4b;
+        z-index: 999;
+    }
+    .bottommenu-item, .bottommenu-item2{
+        display: block;
+        width: 24.5vw;
+        text-align: center;
+        color: #4b4b4b;
+    }
+    .bottommenu-item2{
+        background-color: #34B9FF;
+        color: white;
+    }
+    .bottommenu-line{
+        background-color: #4b4b4b;
+        width: 0.5vw;
+        height: 20vw;
+        margin: 0vw auto 0;
+    }
+    .bottommenu-item img, .bottommenu-item2 img{
+        display: block;
+        height: 10vw;
+        margin: 2.5vw auto 1vw;
+    }
+    .bottommenu-item p, .bottommenu-item2 p{
+        display: block;
+    }
+
+    /* コンテンツ共通 */
+    .content{
+        padding: 10vw 5vw 35vw;
+    }
+    .content-title{
+        padding: 0 0 2.5vw;
+        font-size: 8vw;
+    }
+    .content-subtitle{
+        margin: 0 0 0 1.5vw;
+        font-size: 3vw;
+    }
+    .content-intro{
+        margin: 0 0 8vw 2vw;
+    }
+
+    /* フッター関連 */
+    .footer-left{
+        display: block;
+        position: relative;
+        width: auto;
+    }
+    .mail{
+        font-size: 4vw;
+        line-height: 5vw;
+        margin: 0 0 0 3vw;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .footer-info{
+        display: block;
+        width: 80vw;
+        margin: 15vw auto 0;
+        line-height: 3.5vw;
+    }
+}
