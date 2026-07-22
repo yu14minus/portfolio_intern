@@ -179,7 +179,9 @@ header{
     justify-content: space-between;
     margin: 0 0 8vw;
 }
-.footer-left{
+
+/* インターン用では必要ない */
+/* .footer-left{
     display: block;
     position: relative;
     width: 30vw;
@@ -188,7 +190,8 @@ header{
     font-size: 2vw;
     line-height: 3vw;
     margin: 0;
-}
+} */
+
 .footer-menu{
     display: block;
     margin: 0 0 0 auto;
@@ -333,7 +336,9 @@ header{
     }
 
     /* フッター関連 */
-    .footer-left{
+
+    /* インターン用では必要ない */
+    /* .footer-left{
         display: block;
         position: relative;
         width: auto;
@@ -342,7 +347,8 @@ header{
         font-size: 4vw;
         line-height: 5vw;
         margin: 0 0 0 3vw;
-    }
+    } */
+    
     .footer-menu{
         display: none;
     }
@@ -477,7 +483,9 @@ header{
     }
 
     /* フッター関連 */
-    .footer-left{
+
+    /* インターン用では必要ない */
+    /* .footer-left{
         display: block;
         position: relative;
         width: auto;
@@ -486,7 +494,8 @@ header{
         font-size: 4vw;
         line-height: 5vw;
         margin: 0 0 0 3vw;
-    }
+    } */
+    
     .footer-menu{
         display: none;
     }
