@@ -1,36 +1,40 @@
 /* プロフィール */
-#profile{
+#profile {
     background-color: #DBDCDB;
 }
 
-.profile-container{
+.profile-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 78vw;
     margin: 0 auto;
 }
-.profile-info{
+
+.profile-info {
     width: 50vw;
-    line-height: 2.2vw;
+    line-height: 1.5;
 }
-.profile-icon{
+
+.profile-icon {
     width: 22vw;
 }
 
 
 /* スマホ・タブレット */
-@media screen and (max-width: 960px) and (orientation: portrait){
-    .profile-container{
+@media screen and (max-width: 960px) and (orientation: portrait) {
+    .profile-container {
         display: block;
         width: 80vw;
         margin: 0 auto;
     }
-    .profile-info{
+
+    .profile-info {
         width: 100%;
-        line-height: 5vw;
+        line-height: 1.5;
     }
-    .profile-icon{
+
+    .profile-icon {
         width: 30vw;
         margin: 5vw 0 0 40vw;
     }
