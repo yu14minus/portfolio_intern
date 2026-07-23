@@ -6,6 +6,7 @@ p{
     font-size: 1.5vw;
     font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Arial", "Yu Gothic", "Meiryo", sans-serif;
     font-weight: 600;
+    line-height: 1.2;
 }
 body{
     width: 100vw;
