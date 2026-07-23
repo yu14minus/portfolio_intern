@@ -1,10 +1,11 @@
 /* 実績 */
-#works{
+#works {
     position: relative;
     width: 100vw;
 }
+
 /* 装飾 */
-.tri11{
+.tri11 {
     position: absolute;
     top: 0;
     right: 0;
@@ -13,7 +14,8 @@
     border-left: 10vw solid transparent;
     z-index: 4;
 }
-.tri12{
+
+.tri12 {
     position: absolute;
     top: -1vh;
     right: 0;
@@ -22,7 +24,8 @@
     border-left: 15vw solid transparent;
     z-index: 3;
 }
-.tri13{
+
+.tri13 {
     position: absolute;
     top: 0;
     right: 0;
@@ -31,7 +34,8 @@
     border-left: 20vw solid transparent;
     z-index: 2;
 }
-.tri14{
+
+.tri14 {
     position: absolute;
     top: -1vh;
     right: 0;
@@ -42,18 +46,21 @@
 }
 
 /* 中身(全体) */
-.work-container{
+.work-container {
     position: relative;
 }
-.work-container .swiper{
+
+.work-container .swiper {
     display: flex;
     margin: 4vw auto;
     width: 62vw;
 }
-.work-container .swiper-wrapper{
+
+.work-container .swiper-wrapper {
     width: 90%;
 }
-.work-item{
+
+.work-item {
     display: block;
     height: 25vw;
     /* background-color: #DBDCDB; */
@@ -65,60 +72,71 @@
 
 
 /* スライダー */
-.swiper-pagination{
+.swiper-pagination {
     display: block;
     position: relative;
 }
+
 .swiper-pagination-bullet {
-  width: 1vw !important;
-  height: 1vw !important;
-  margin: 0.5vw 0 0 1vw !important;
-  background: #34B9FF !important;
+    width: 1vw !important;
+    height: 1vw !important;
+    margin: 0.5vw 0 0 1vw !important;
+    background: #34B9FF !important;
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
     display: block;
     margin: -1.5vw 0 0 7vw;
 }
-.swiper-button-next{
+
+.swiper-button-next {
     display: block;
     margin: -1.5vw 8vw 0 0;
 }
-.swiper-button-next::after, .swiper-button-prev::after {
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
     font-size: 4vw;
     font-weight: 800;
     color: #34B9FF;
 }
+
 /* スライダーの中身 */
-.work-tagall{
+.work-tagall {
     display: flex;
     width: 100%;
     height: 2.5vw;
 }
-.work-iconcontainer{
+
+.work-iconcontainer {
     display: block;
     position: relative;
     width: 2.5vw;
     height: 2.5vw;
 }
-.work-icon{
+
+.work-icon {
     position: absolute;
     width: 100%;
     line-height: 100%;
 }
-.work-tagcontainer{
+
+.work-tagcontainer {
     display: block;
     position: relative;
     margin: 0 0 0 0.5vw;
     width: auto;
     height: 100%;
 }
-.work-tag{
+
+.work-tag {
     position: absolute;
     font-size: 1.8vw;
     font-weight: 600;
     bottom: 0.1vw;
 }
-.work-imgcontainer{
+
+.work-imgcontainer {
     position: relative;
     margin: 1.2vw auto 1.4vw;
     border: 7px solid #4b4b4b;
@@ -126,8 +144,10 @@
     width: 100%;
     height: 10vw;
     display: flex;
+    overflow: hidden;
 }
-.work-img{
+
+.work-img {
     display: block;
     margin: 0;
     height: 100%;
@@ -135,19 +155,22 @@
     object-fit: contain;
     object-position: center;
 }
-.work-img img{
+
+.work-img img {
     display: block;
     height: 100%;
     width: 100%;
     object-fit: contain;
     object-position: center;
 }
-.work-imgcontainer .play-btn{
+
+.work-imgcontainer .play-btn {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.work-imgcontainer .play-btn img{
+
+.work-imgcontainer .play-btn img {
     width: 25%;
     position: absolute;
     top: 50%;
@@ -155,14 +178,17 @@
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
-.work-imgcontainer .play-btn.playActive{
+
+.work-imgcontainer .play-btn.playActive {
     opacity: 0;
 }
-.work-itemtitle{
+
+.work-itemtitle {
     text-align: center;
     font-size: 1.5vw;
 }
-.work-iteminfo{
+
+.work-iteminfo {
     position: absolute;
     bottom: 1vw;
     right: 1vw;
@@ -171,141 +197,176 @@
 }
 
 /* ジャンルごとの表示非表示 */
-.work-icon.web, .work-icon.mov{
+.work-icon.web,
+.work-icon.mov {
     visibility: hidden;
 }
-.work-tag.web, .work-tag.mov, .work-tag.oth{
+
+.work-tag.web,
+.work-tag.mov,
+.work-tag.oth {
     visibility: hidden;
 }
+
 /* webの場合 */
-.work-item.web .work-icon.web{
+.work-item.web .work-icon.web {
     visibility: visible;
 }
-.work-item.web .work-icon.que{
+
+.work-item.web .work-icon.que {
     visibility: hidden;
 }
-.work-item.web .work-tag.web{
+
+.work-item.web .work-tag.web {
     visibility: visible;
 }
+
 /* 動画の場合 */
-.work-item.mov .work-icon.mov{
+.work-item.mov .work-icon.mov {
     visibility: visible;
 }
-.work-item.mov .work-icon.que{
+
+.work-item.mov .work-icon.que {
     visibility: hidden;
 }
-.work-item.mov .work-tag.mov{
+
+.work-item.mov .work-tag.mov {
     visibility: visible;
 }
+
 /* その他の場合 */
-.work-item.oth .work-tag.oth{
+.work-item.oth .work-tag.oth {
     visibility: visible;
 }
 
 
 /* ポップアップ */
 .popup-wrapper {
-  background-color: rgba(0, 0, 0, .5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  opacity: 0;           /* 最初は透明 */
-  visibility: hidden;   /* 最初は非表示（クリック判定も消える） */
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* 0.3秒でフェード */
-  pointer-events: none; /* 透明なときはクリックできないようにする */
-}
-.popup-wrapper.show {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto; /* 表示されたらクリックできるように戻す */
-}
-.popup-content {
-  text-align: center;
-  width: 100%;
-  max-width: 50vw;
-  max-height: 80vh;
-  background: white;
-  color: #4b4b4b;
-  margin: 15vh auto 0;
-  padding: 4vw 5vw 5vw;
-  position: relative;
-  overflow: scroll;
-  overscroll-behavior: none;
-}
-.popup-close {
-  position: absolute;
-  top: 2vw;
-  right: 2.5vw;
-  cursor: pointer;
-  font-size: 2.5vw;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+    /* 最初は透明 */
+    visibility: hidden;
+    /* 最初は非表示（クリック判定も消える） */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* 0.3秒でフェード */
+    pointer-events: none;
+    /* 透明なときはクリックできないようにする */
 }
 
-.popup-tagall{
+.popup-wrapper.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    /* 表示されたらクリックできるように戻す */
+}
+
+.popup-content {
+    text-align: center;
+    width: 100%;
+    max-width: 50vw;
+    max-height: 80vh;
+    background: white;
+    color: #4b4b4b;
+    margin: 15vh auto 0;
+    padding: 4vw 5vw 5vw;
+    position: relative;
+    overflow: scroll;
+    overscroll-behavior: none;
+}
+
+.popup-close {
+    position: absolute;
+    top: 2vw;
+    right: 2.5vw;
+    cursor: pointer;
+    font-size: 2.5vw;
+}
+
+.popup-tagall {
     display: flex;
     width: 100%;
     height: 2.5vw;
     margin: 0 0 2vw;
 }
-.popup-iconcontainer{
+
+.popup-iconcontainer {
     display: block;
     position: relative;
     width: 2.5vw;
     height: 2.5vw;
 }
-.popup-icon{
+
+.popup-icon {
     position: absolute;
     width: 100%;
     line-height: 100%;
 }
-.popup-tagcontainer{
+
+.popup-tagcontainer {
     display: block;
     position: relative;
     margin: 0 0 0 2vw;
     width: auto;
     height: 100%;
 }
-.popup-tag{
+
+.popup-tag {
     position: absolute;
     font-size: 1.8vw;
     font-weight: 600;
     bottom: 0.1vw;
 }
+
 /* ジャンルごとの表示非表示 */
-.popup-icon.web, .popup-icon.mov{
+.popup-icon.web,
+.popup-icon.mov {
     visibility: hidden;
 }
-.popup-tag.web, .popup-tag.mov, .popup-tag.oth{
+
+.popup-tag.web,
+.popup-tag.mov,
+.popup-tag.oth {
     visibility: hidden;
 }
+
 /* webの場合 */
-.popup-content.web .popup-icon.web{
-    visibility: visible;
-}
-.popup-content.web .popup-icon.que{
-    visibility: hidden;
-}
-.popup-content.web .popup-tag.web{
-    visibility: visible;
-}
-/* 動画の場合 */
-.popup-content.mov .popup-icon.mov{
-    visibility: visible;
-}
-.popup-content.mov .popup-icon.que{
-    visibility: hidden;
-}
-.popup-content.mov .popup-tag.mov{
-    visibility: visible;
-}
-/* その他の場合 */
-.popup-content.oth .popup-tag.oth{
+.popup-content.web .popup-icon.web {
     visibility: visible;
 }
 
-.popup-imgcontainer{
+.popup-content.web .popup-icon.que {
+    visibility: hidden;
+}
+
+.popup-content.web .popup-tag.web {
+    visibility: visible;
+}
+
+/* 動画の場合 */
+.popup-content.mov .popup-icon.mov {
+    visibility: visible;
+}
+
+.popup-content.mov .popup-icon.que {
+    visibility: hidden;
+}
+
+.popup-content.mov .popup-tag.mov {
+    visibility: visible;
+}
+
+/* その他の場合 */
+.popup-content.oth .popup-tag.oth {
+    visibility: visible;
+}
+
+.popup-imgcontainer {
     position: relative;
     margin: 1.5vw auto 3vw;
     border: 7px solid #4b4b4b;
@@ -314,7 +375,8 @@
     height: 17.5vw;
     display: flex;
 }
-.popup-img{
+
+.popup-img {
     display: block;
     margin: 0;
     height: 100%;
@@ -322,19 +384,22 @@
     object-fit: contain;
     object-position: center;
 }
-.popup-img img{
+
+.popup-img img {
     display: block;
     height: 100%;
     width: 100%;
     object-fit: contain;
     object-position: center;
 }
-.popup-imgcontainer .popup-play-btn{
+
+.popup-imgcontainer .popup-play-btn {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.popup-imgcontainer .popup-play-btn img{
+
+.popup-imgcontainer .popup-play-btn img {
     width: 25%;
     position: absolute;
     top: 50%;
@@ -342,16 +407,18 @@
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
-.popup-imgcontainer .popup-play-btn.playActive{
+
+.popup-imgcontainer .popup-play-btn.playActive {
     opacity: 0;
 }
 
-.popup-title{
+.popup-title {
     text-align: center;
     font-size: 2.5vw;
     margin: 0 0 2vw;
 }
-.popup-info{
+
+.popup-info {
     display: block;
     width: 85%;
     text-align: left;
@@ -361,31 +428,36 @@
 
 
 /* スマホ*/
-@media screen and (max-width: 768px) and (orientation: portrait){
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
     /* 装飾 */
-    .tri11{
+    .tri11 {
         border-top: 8vw solid white;
         border-left: 8vw solid transparent;
     }
-    .tri12{
+
+    .tri12 {
         border-top: 16vw solid #34B9FF;
         border-left: 16vw solid transparent;
     }
-    .tri13{
+
+    .tri13 {
         border-top: 24vw solid white;
         border-left: 24vw solid transparent;
     }
-    .tri14{
+
+    .tri14 {
         border-top: 33vw solid #34B9FF;
         border-left: 33vw solid transparent;
     }
-    
+
     /* 中身(全体) */
-    .work-container .swiper{
+    .work-container .swiper {
         margin: 4vw auto;
         width: 60vw;
     }
-    .work-item{
+
+    .work-item {
         height: 75vw;
         border: 4px solid #4b4b4b;
         padding: 3vw;
@@ -394,45 +466,55 @@
 
     /* スライダー */
     .swiper-pagination-bullet {
-    width: 2vw !important;
-    height: 2vw !important;
-    margin: 5vw 0 0 2vw !important;
-    background: #34B9FF !important;
+        width: 2vw !important;
+        height: 2vw !important;
+        margin: 5vw 0 0 2vw !important;
+        background: #34B9FF !important;
     }
-    .swiper-button-prev{
+
+    .swiper-button-prev {
         margin: -1.5vw 0 0 2vw;
     }
-    .swiper-button-next{
+
+    .swiper-button-next {
         margin: -1.5vw 0 0 0;
     }
-    .swiper-button-next::after, .swiper-button-prev::after {
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
         font-size: 7vw;
     }
-    
+
     /* スライダーの中身 */
-    .work-tagall{
+    .work-tagall {
         height: 7vw;
     }
-    .work-iconcontainer{
+
+    .work-iconcontainer {
         width: 7vw;
         height: 7vw;
     }
-    .work-tagcontainer{
+
+    .work-tagcontainer {
         margin: 0 0 0 2vw;
     }
-    .work-tag{
+
+    .work-tag {
         font-size: 5vw;
         bottom: 0.1vw;
     }
-    .work-imgcontainer{
+
+    .work-imgcontainer {
         margin: 3vw auto 4vw;
         border: 4px solid #4b4b4b;
         height: 30vw;
     }
-    .work-itemtitle{
+
+    .work-itemtitle {
         font-size: 4vw;
     }
-    .work-iteminfo{
+
+    .work-iteminfo {
         bottom: 2vw;
         right: 2vw;
         font-size: 3vw;
@@ -440,52 +522,59 @@
 
     /* ポップアップ */
     .popup-content {
-    max-width: 90vw;
-    max-height: 80vh;
-    margin: 12vh auto 0;
-    padding: 10vw 5vw;
+        max-width: 90vw;
+        max-height: 80vh;
+        margin: 12vh auto 0;
+        padding: 10vw 5vw;
     }
+
     .popup-close {
-    top: 3vw;
-    right: 2vw;
-    right: 2.5vw;
-    cursor: pointer;
-    font-size: 5vw;
+        top: 3vw;
+        right: 2vw;
+        right: 2.5vw;
+        cursor: pointer;
+        font-size: 5vw;
     }
-    .popup-tagall{
+
+    .popup-tagall {
         display: flex;
         height: 8vw;
         margin: 0 0 7vw;
     }
-    .popup-iconcontainer{
+
+    .popup-iconcontainer {
         width: 8vw;
         height: 8vw;
     }
-    .popup-tagcontainer{
+
+    .popup-tagcontainer {
         display: block;
         position: relative;
         margin: 0 0 0 6vw;
         width: auto;
         height: 100%;
     }
-    .popup-tag{
+
+    .popup-tag {
         position: absolute;
         font-size: 6vw;
         font-weight: 600;
         bottom: 0.1vw;
     }
 
-    .popup-imgcontainer{
+    .popup-imgcontainer {
         margin: 1.5vw auto 8vw;
         border: 5px solid #4b4b4b;
         width: 80%;
         height: 40vw;
     }
-    .popup-title{
+
+    .popup-title {
         margin: 0 0 8vw;
         font-size: 5vw;
     }
-    .popup-info{
+
+    .popup-info {
         width: 90%;
         line-height: 3.5vw;
         margin: 0 auto 3vw;
@@ -493,31 +582,36 @@
 }
 
 /* タブレット*/
-@media screen and (min-width: 768px) and (max-width: 960px) and (orientation: portrait){
+@media screen and (min-width: 768px) and (max-width: 960px) and (orientation: portrait) {
+
     /* 装飾 */
-    .tri11{
+    .tri11 {
         border-top: 8vw solid white;
         border-left: 8vw solid transparent;
     }
-    .tri12{
+
+    .tri12 {
         border-top: 16vw solid #34B9FF;
         border-left: 16vw solid transparent;
     }
-    .tri13{
+
+    .tri13 {
         border-top: 24vw solid white;
         border-left: 24vw solid transparent;
     }
-    .tri14{
+
+    .tri14 {
         border-top: 33vw solid #34B9FF;
         border-left: 33vw solid transparent;
     }
-    
+
     /* 中身(全体) */
-    .work-container .swiper{
+    .work-container .swiper {
         margin: 4vw auto;
         width: 50vw;
     }
-    .work-item{
+
+    .work-item {
         height: 65vw;
         border: 4px solid #4b4b4b;
         padding: 3vw;
@@ -526,45 +620,55 @@
 
     /* スライダー */
     .swiper-pagination-bullet {
-    width: 2vw !important;
-    height: 2vw !important;
-    margin: 5vw 0 0 2vw !important;
-    background: #34B9FF !important;
+        width: 2vw !important;
+        height: 2vw !important;
+        margin: 5vw 0 0 2vw !important;
+        background: #34B9FF !important;
     }
-    .swiper-button-prev{
+
+    .swiper-button-prev {
         margin: -1.5vw 0 0 2vw;
     }
-    .swiper-button-next{
+
+    .swiper-button-next {
         margin: -1.5vw 0 0 0;
     }
-    .swiper-button-next::after, .swiper-button-prev::after {
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
         font-size: 7vw;
     }
-    
+
     /* スライダーの中身 */
-    .work-tagall{
+    .work-tagall {
         height: 7vw;
     }
-    .work-iconcontainer{
+
+    .work-iconcontainer {
         width: 7vw;
         height: 7vw;
     }
-    .work-tagcontainer{
+
+    .work-tagcontainer {
         margin: 0 0 0 2vw;
     }
-    .work-tag{
+
+    .work-tag {
         font-size: 5vw;
         bottom: 0.1vw;
     }
-    .work-imgcontainer{
+
+    .work-imgcontainer {
         margin: 3vw auto 4vw;
         border: 4px solid #4b4b4b;
         height: 30vw;
     }
-    .work-itemtitle{
+
+    .work-itemtitle {
         font-size: 4vw;
     }
-    .work-iteminfo{
+
+    .work-iteminfo {
         bottom: 2vw;
         right: 2vw;
         font-size: 3vw;
@@ -572,52 +676,59 @@
 
     /* ポップアップ */
     .popup-content {
-    max-width: 90vw;
-    max-height: 70vh;
-    margin: 12vh auto 0;
-    padding: 10vw 5vw;
+        max-width: 90vw;
+        max-height: 70vh;
+        margin: 12vh auto 0;
+        padding: 10vw 5vw;
     }
+
     .popup-close {
-    top: 3vw;
-    right: 2vw;
-    right: 2.5vw;
-    cursor: pointer;
-    font-size: 5vw;
+        top: 3vw;
+        right: 2vw;
+        right: 2.5vw;
+        cursor: pointer;
+        font-size: 5vw;
     }
-    .popup-tagall{
+
+    .popup-tagall {
         display: flex;
         height: 8vw;
         margin: 0 0 7vw;
     }
-    .popup-iconcontainer{
+
+    .popup-iconcontainer {
         width: 8vw;
         height: 8vw;
     }
-    .popup-tagcontainer{
+
+    .popup-tagcontainer {
         display: block;
         position: relative;
         margin: 0 0 0 6vw;
         width: auto;
         height: 100%;
     }
-    .popup-tag{
+
+    .popup-tag {
         position: absolute;
         font-size: 6vw;
         font-weight: 600;
         bottom: 0.1vw;
     }
 
-    .popup-imgcontainer{
+    .popup-imgcontainer {
         margin: 1.5vw auto 8vw;
         border: 5px solid #4b4b4b;
         width: 80%;
         height: 40vw;
     }
-    .popup-title{
+
+    .popup-title {
         margin: 0 0 8vw;
         font-size: 5vw;
     }
-    .popup-info{
+
+    .popup-info {
         width: 90%;
         line-height: 3.5vw;
         margin: 0 auto 3vw;
