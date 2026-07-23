@@ -34,7 +34,8 @@
         <div class="gray">
             <div class="squ01">
                 <p class="start-title scroll-up-first">Portfolio</p>
-                <p class="start-intro">ご覧いただきありがとうございます。
+                <p class="start-intro">
+                    ご覧いただきありがとうございます。
                     <br>こちらは私のポートフォリオサイト
                     <br>です。
                 </p>
@@ -204,13 +205,17 @@
         <div class="tri14"></div>
         <!-- 中身 -->
         <p class="content-title scroll-up">Works<span class="content-subtitle">制作したもの</span></p>
-        <p class="content-intro">以下はこれまでに私が制作したサイトや動画です。</p>
+        <p class="content-intro">
+            以下はこれまでに私が制作したサイトや動画です。
+            <br>「詳細」に説明等を記載しています。
+        </p>
+
         <!-- スライド -->
         <div class="work-container">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <!-- 制作物スライド テンプレ -->
-                    <!-- work-item(一番上)に web, mov, oth を追加 -->
+                    <!-- work-item(一番上)に web, mov, oth を追加、data-target(一番下)のid変更 -->
                     <!--
                     <div class="work-item oth swiper-slide">
                         <div class="work-tagall">
@@ -236,7 +241,7 @@
                             <iframe class="work-img" src=""></iframe>
                         </div>
                         <p class="work-itemtitle">ページや動画のタイトル</p>
-                        <p class="work-iteminfo" data-target="#popup-00">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
+                        <p class="work-iteminfo" data-target="#popup-xxx">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
                     </div>
                     -->
 
@@ -283,7 +288,8 @@
                                 <img src="./images/play-btn.svg" class="play-btn" alt="プレイ">
                             </div>
                         </div>
-                        <p class="work-itemtitle">TwitterがXになる
+                        <p class="work-itemtitle">
+                            TwitterがXになる
                             <br>動画
                         </p>
                         <p class="work-iteminfo" data-target="#popup-twi">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
@@ -329,27 +335,57 @@
                             </div>
                         </div>
                         <div class="work-imgcontainer">
-                            <a class="work-img" href="./quiz/index.html">
+                            <a class="work-img" href="https://yu14minus.github.io/two_choice_quiz/">
                                 <img src="./images/works/two_choice_quiz.png" alt="2択早押しクイズ">
                             </a>
                         </div>
                         <p class="work-itemtitle">2択早押しクイズ</p>
                         <p class="work-iteminfo" data-target="#popup-qui">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
                     </div>
+
+                    <!-- 制作物スライド テンプレ -->
+                    <div class="work-item web swiper-slide">
+                        <div class="work-tagall">
+                            <div class="work-iconcontainer">
+                                <img class="work-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                                <img class="work-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                                <img class="work-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                            </div>
+                            <div class="work-tagcontainer">
+                                <p class="work-tag web">Web</p>
+                                <p class="work-tag mov">Movie</p>
+                                <p class="work-tag oth">Others</p>
+                            </div>
+                        </div>
+                        <div class="work-imgcontainer">
+                            <a class="work-img" href="https://yu14minus.github.io/portfolio_intern/">
+                                <img src="" alt="ポートフォリオサイト">
+                            </a>
+                        </div>
+                        <p class="work-itemtitle">
+                            ポートフォリオサイト
+                            <br>(当サイト)
+                        </p>
+                        <p class="work-iteminfo" data-target="#popup-ptf">詳細&nbsp;(ポップアップ表示)&nbsp;</p>
+                    </div>
+
                 </div>
             </div>
+
             <!-- ナビボタン -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
         </div>
+
         <!-- ページネーション -->
         <div class="swiper-pagination"></div>
 
         <!-- ポップアップ -->
-        <!-- テンプレ -->
-        <!-- popup-content に web, mov, oth を追加 -->
+        <!-- 制作物ポップアップ テンプレ -->
+        <!-- popup-content に web, mov, oth を追加、id命名 -->
         <!--
-        <div id="popup-00" class="popup-wrapper">
+        <div id="popup-xxx" class="popup-wrapper">
             <div class="popup-content oth">
                 <div class="popup-close">✕</div>
                 <div class="popup-tagall">
@@ -375,13 +411,26 @@
                     <iframe class="popup-img" src=""></iframe>
                 </div>
                 <p class="popup-title">ページや動画のタイトル</p>
-                <p class="popup-info">＜説明＞
-                    <br>説明</p>
-                <p class="popup-info">＜リンク＞
-                    <br><a href="" class="underline">リンク</a>
+                <p class="popup-info">
+                    ＜説明＞
+                    <br>説明
                 </p>
-                <p class="popup-info">＜制作(最終更新)＞
-                    <br>0000年0月</p>
+                <p class="popup-info">
+                    ＜使用言語・アプリ等＞
+                    <br>使用言語・アプリ等
+                </p>
+                <p class="popup-info">
+                    ＜リンク＞
+                    <br><a href=""
+                        class="underline">View Site</a>
+                    <br><a href=""
+                        class="underline">View&nbsp;Code&nbsp;(Github)</a>
+                    <br><a href=""
+                        class="underline">Watch&nbsp;Video&nbsp;(Youtube)</a>
+                </p>
+                <p class="popup-info">
+                    ＜制作(最終更新)＞
+                    <br>0000年00月</p>
             </div>
         </div>
         -->
@@ -408,17 +457,24 @@
                     </a>
                 </div>
                 <p class="popup-title">勉強スペース紹介</p>
-                <p class="popup-info">＜説明＞
+                <p class="popup-info">
+                    ＜説明＞
                     <br>大学の勉強スペースについてまとめた
                     <br>ページです。複数人のグループで作成し、
                     <br>私は主にコーディングを担当しました。
                 </p>
-                <p class="popup-info">＜リンク＞
-                    <br><a href="https://weebee1212.com/fresh2024/studyspace/"
-                        class="underline">https://weebee1212.com/fresh2024/studyspace/</a>
+                <p class="popup-info">
+                    ＜使用言語・アプリ等＞
+                    <br>HTML、CSS、JavaScript、PHP
                 </p>
-                <p class="popup-info">＜制作&nbsp;(最終更新)＞
-                    <br>2024年7月
+                <p class="popup-info">
+                    ＜リンク＞
+                    <br><a href="https://weebee1212.com/fresh2024/studyspace/"
+                        class="underline">View Site</a>
+                </p>
+                <p class="popup-info">
+                    ＜制作&nbsp;(最終更新)＞
+                    <br>2024年07月
                 </p>
             </div>
         </div>
@@ -446,12 +502,18 @@
                     </div>
                 </div>
                 <p class="popup-title">TwitterがXになる動画</p>
-                <p class="popup-info">＜説明＞
-                    <br>旧Twitterの鳥が飛び立ちXのロゴが現れる動画
-                    <br>です。Aeを用いて制作しました。
+                <p class="popup-info">
+                    ＜説明＞
+                    <br>旧Twitterの鳥が飛び立ち、Xのロゴが現れる
+                    <br>動画です。
                 </p>
-                <p class="popup-info">＜制作(最終更新)＞
-                    <br>2023年9月
+                <p class="popup-info">
+                    ＜使用言語・アプリ等＞
+                    <br>Adobe&nbsp;After&nbsp;Effects
+                </p>
+                <p class="popup-info">
+                    ＜制作(最終更新)＞
+                    <br>2023年09月
                 </p>
             </div>
         </div>
@@ -480,17 +542,25 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <p class="popup-title">団体図鑑のつかい方</p>
-                <p class="popup-info">＜説明＞
+                <p class="popup-info">
+                    ＜説明＞
                     <br>所属サークルで運営しているサイト内の
                     <br>コンテンツの使い方を紹介している動画です。
-                    <br>Ae、Prを用いて制作しました。
+                    <br>適切な量のアニメーションの、シンプルで
+                    <br>わかりやすい動画になるよう心がけました。
                 </p>
-                <p class="popup-info">＜リンク＞
+                <p class="popup-info">
+                    ＜使用言語・アプリ等＞
+                    <br>Adobe&nbsp;After&nbsp;Effects、Premiere&nbsp;Pro
+                </p>
+                <p class="popup-info">
+                    ＜リンク＞
                     <br><a href="https://youtu.be/zUSQRBWL0ro?si=wNbuesCvB_afuIBG"
-                        class="underline">https://youtu.be/zUSQRBWL0ro?si=wNbuesCvB_afuIBG</a>
+                        class="underline">Watch&nbsp;Video&nbsp;(Youtube)</a>
                 </p>
-                <p class="popup-info">＜制作(最終更新)＞
-                    <br>2024年3月
+                <p class="popup-info">
+                    ＜制作(最終更新)＞
+                    <br>2024年03月
                 </p>
             </div>
         </div>
@@ -512,22 +582,79 @@
                     </div>
                 </div>
                 <div class="popup-imgcontainer">
-                    <a class="popup-img" href="./quiz/index.html">
+                    <a class="popup-img" href="https://yu14minus.github.io/two_choice_quiz/">
                         <img src="./images/works/two_choice_quiz.png" alt="2択早押しクイズ">
                     </a>
                 </div>
                 <p class="popup-title">2択早押しクイズ</p>
-                <p class="popup-info">＜説明＞
+                <p class="popup-info">
+                    ＜説明＞
                     <br>表示された画像がAかBかを答える早押しクイズ
                     <br>です。スコア表示やLINE共有機能もつけて
                     <br>います。
                 </p>
-                <p class="popup-info">＜リンク＞
-                    <br><a href="./quiz/index.html" class="underline">./quiz/index.html</a>
+                <p class="popup-info">
+                    ＜使用言語・アプリ等＞
+                    <br>HTML、CSS、JavaScript
                 </p>
-                <p class="popup-info">＜制作(最終更新)＞
+                <p class="popup-info">
+                    ＜リンク＞
+                    <br><a href="https://yu14minus.github.io/two_choice_quiz/"
+                        class="underline">View Site</a>
+                    <br><a href="https://github.com/yu14minus/two_choice_quiz"
+                        class="underline">View&nbsp;Code&nbsp;(Github)</a>
+                </p>
+                <p class="popup-info">
+                    ＜制作(最終更新)＞
                     <br>2025年10月
                 </p>
+            </div>
+        </div>
+
+        <!-- ポートフォリオ(このページ自身) -->
+        <div id="popup-ptf" class="popup-wrapper">
+            <div class="popup-content web">
+                <div class="popup-close">✕</div>
+                <div class="popup-tagall">
+                    <div class="popup-iconcontainer">
+                        <img class="popup-icon web" src="./images/webicon.svg" alt="Webページのアイコン">
+                        <img class="popup-icon mov" src="./images/movieicon.svg" alt="動画のアイコン">
+                        <img class="popup-icon que" src="./images/queicon.svg" alt="？のアイコン">
+                    </div>
+                    <div class="popup-tagcontainer">
+                        <p class="popup-tag web">Web</p>
+                        <p class="popup-tag mov">Movie</p>
+                        <p class="popup-tag oth">Others</p>
+                    </div>
+                </div>
+                <div class="popup-imgcontainer">
+                    <a class="popup-img" href="https://yu14minus.github.io/portfolio_intern/">
+                        <img src="" alt="ポートフォリオサイト">
+                    </a>
+                </div>
+                <p class="popup-title">
+                    ポートフォリオサイト
+                    <br>(当サイト)
+                </p>
+                <p class="popup-info">
+                    ＜説明＞
+                    <br>当ポートフォリオサイトです。
+                    <br>培った技術を活用しつつ、見やすいUIや適度なアニメーションを意識することで、経験や制作物をわかりやすくまとめられるよう心がけました。
+                </p>
+                <p class="popup-info">
+                    ＜使用言語・アプリ等＞
+                    <br>HTML、CSS、JavaScript
+                </p>
+                <p class="popup-info">
+                    ＜リンク＞
+                    <br><a href="https://yu14minus.github.io/portfolio_intern/"
+                        class="underline">View Site</a>
+                    <br><a href="https://github.com/yu14minus/portfolio_intern"
+                        class="underline">View&nbsp;Code&nbsp;(Github)</a>
+                </p>
+                <p class="popup-info">
+                    ＜制作(最終更新)＞
+                    <br>2026年07月</p>
             </div>
         </div>
 
@@ -538,12 +665,13 @@
         <p class="content-title scroll-up">Profile<span class="content-subtitle">自己紹介</span></p>
         <p class="content-intro">以下は簡単な自己紹介です。</p>
         <div class="profile-container">
-            <p class="profile-info">当サイトをご覧いただきありがとうございます。
+            <p class="profile-info">
+                当サイトをご覧いただきありがとうございます。
                 <br>私はこれまで大学で学びつつ、<span class="underline">サークル活動で3年間、
                     Webサイト(<a href="https://weebee1212.com"
                         class="underline">https://weebee1212.com</a>)の運営やコーディングに携わって</span>きました。
-                <br>そこで得たコーディングの経験を土台として実務に携わることで、<span
-                    class="underline">現場で求められる高い基準を満たせる確かな技術力を養い、将来に向けてさらに成長したい</span>と考えています。
+                <br>そこで得たコーディングの経験を土台として実務に携わることで、<span class="underline">現場で求められる
+                    高い基準を満たせる確かな技術力を養い、将来に向けてさらに成長したい</span>と考えています。
                 <br>補足として、サークルでは<span class="underline">Adobe&nbsp;After&nbsp;EffectsやPremie&nbsp;Proを用いた動画制作にも
                     2年ほど取り組んできました</span>ので、そちらでの制作物についても併せて上部の「Works」に掲載しております。
                 <br>
