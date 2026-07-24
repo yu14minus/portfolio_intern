@@ -71,6 +71,7 @@ header{
 .header-title{
     font-size: 3vw;
     font-weight: bold;
+    line-height: 12vh;
 }
 .header-menu{
     margin: 0 0 0 auto;
@@ -229,6 +230,7 @@ header{
     }
     .header-title{
         font-size: 4.5vw;
+        line-height: 15vw;
     }
     .header-menu ul{
         font-size: 3vw;
@@ -377,6 +379,7 @@ header{
     }
     .header-title{
         font-size: 4.5vw;
+        line-height: 15vw;
     }
     .header-menu ul{
         font-size: 3vw;
