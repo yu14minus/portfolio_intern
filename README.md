@@ -3,7 +3,7 @@
 自身の制作実績やスキルセットをまとめたポートフォリオサイトです。
 
 ## 公開URL
-- https://yu14minus.github.io/portfolio_intern
+https://yu14minus.github.io/portfolio_intern
 
 ## 概要
 サークル活動や個人開発で制作したWebサイト、Webアプリケーション、動画等の実績を掲載しているポートフォリオサイトです。
