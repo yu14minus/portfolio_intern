@@ -16,7 +16,6 @@ https://yu14minus.github.io/portfolio_intern
 - HTML
 - CSS
 - JavaScript
-- GitHub Pages
 
 ## 実装のポイント
 
