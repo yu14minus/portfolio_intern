@@ -78,11 +78,17 @@ header{
 }
 .header-menu ul{
     display: flex;
+    align-items: center;
     font-size: 2vw;
     text-decoration: underline;
 }
 .header-item{
     margin: 0 3vw 0 0;
+}
+.header-item img{
+    display: block;
+    margin: 0.2vw 1vw 0 0;
+    width: 3.5vw;
 }
 
 /* 初期画面 */
@@ -237,6 +243,9 @@ header{
     }
     .header-item{
         margin: 0 4vw 0 0;
+    }
+    .header-item img{
+        width: 5vw;
     }
 
     /* 初期画面 */
