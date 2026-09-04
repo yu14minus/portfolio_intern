@@ -88,7 +88,7 @@ header{
 .header-item img{
     display: block;
     margin: 0.2vw 1vw 0 0;
-    width: 3.5vw;
+    width: 3vw;
 }
 
 /* 初期画面 */
@@ -218,7 +218,7 @@ header{
 .footer-item img{
     display: block;
     margin: 0 1vw 0 0;
-    width: 4vw;
+    width: 3.5vw;
 }
 .footer-info{
     display: block;
