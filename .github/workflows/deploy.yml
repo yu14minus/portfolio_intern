@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          # コミット日時を取得するために全履歴を取得する
+          fetch-depth: 0
+
+      - name: 日付プレースホルダーを置換
+        run: |
+          # 日本時間で最終コミット日をyyyy.mm.dd形式で取得する
+          COMMIT_DATE=$(TZ='Asia/Tokyo' git log -1 --format=%cd --date=format:'%Y.%m.%d')
+          # index.html内の目印をコミット日に置換する
+          sed -i "s/__LAST_UPDATED__/$COMMIT_DATE/g" index.html
+
+      - name: GitHub Pagesの設定
+        uses: actions/configure-pages@v5
+
+      - name: 成果物のアップロード
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: GitHub Pagesへデプロイ
+        id: deployment
+        uses: actions/deploy-pages@v4
